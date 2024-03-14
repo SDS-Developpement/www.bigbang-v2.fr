@@ -1,23 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="a4ba2441-12ce-423c-8c67-1b666467be7f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/logs/access.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/logs/error.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/mysql/init/administrateur.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/webserver/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/webserver/conf/apache.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/webserver/conf/php.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/webserver/conf/vhost.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repo.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/www/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/www/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,8 +35,12 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Problems",
     "project.structure.proportion": "0.0",
@@ -64,7 +58,7 @@
       <option name="presentableId" value="Default" />
       <updated>1710410347357</updated>
       <workItem from="1710410348379" duration="150000" />
-      <workItem from="1710410514086" duration="234000" />
+      <workItem from="1710410514086" duration="718000" />
     </task>
     <servers />
   </component>
