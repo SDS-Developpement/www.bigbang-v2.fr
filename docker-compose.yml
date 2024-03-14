@@ -1,0 +1,55 @@
+version: '3.8'
+
+services:
+
+  database:
+    container_name: database_mysql57
+    image: mysql:5.7.42
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: motdepasseroot
+      MYSQL_DATABASE: bigbang_db
+      MYSQL_USER: bigbang_user
+      MYSQL_PASSWORD: luu2xZ9N0tBJW3b
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./docker/mysql/init:/docker-entrypoint-initdb.d:rw
+      - ./docker/mysql/data:/var/lib/mysql:rw
+    networks:
+      - website_network
+
+
+  phpmyadmin:
+    container_name: phpmyadmin52
+    image: phpmyadmin:5.2.1
+    restart: always
+    ports:
+      - "8081:80"
+    links:
+      - database
+    environment:
+      - PMA_HOST=database
+      - PMA_PORT=3306
+    depends_on:
+      - database
+    networks:
+      - website_network
+
+
+  webserver:
+    container_name: webserver_apache_php74
+    build: ./docker/webserver
+    volumes:
+      - ./www:/var/www/html:rw
+      - ./docker/logs:/var/www/logs:rw
+    ports:
+      - "8080:80"
+    depends_on:
+      - database
+    networks:
+      - website_network
+
+networks:
+  website_network:
